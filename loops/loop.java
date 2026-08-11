@@ -184,35 +184,63 @@ public class loop{
 //     }
 // }
 //even or odd sum
+// import java.util.*;
+// public class loop{
+//     public static void main(String[] args){
+//         int number;
+//         int choice;
+//         int evenSum = 0;
+//         int oddSum = 0;
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter a number");
+
+//         number = sc.nextInt();
+//       for (int i = 0; i <= number;i++){
+//         if(number%2==0){
+//             evenSum+=i;
+//         }
+//         else{
+//             oddSum +=i;
+//         }
+//       }
+//       System.out.print("Do want to continue ? Press 1 for yes and 0 for not");
+//       choice = sc.nextInt();
+//       if(choice == 1 && number%2==0){
+//           System.out.print("The sum of even num = " + evenSum);
+//       }
+//           if(choice == 1 && number%2!=0){
+//             System.out.print("The sum of even num = " + oddSum);
+//           }
+      
+//     }
+
+// }
+// import java.util.*;
+// public class loop {
+//    public static void main(String[] arg){
+//       Scanner sc = new Scanner(System.in);
+//       int fact = 1;
+//       System.out.print("Enter a number");
+//       int num = sc.nextInt();
+//       for(int i = 1; i <= num; i++){
+//          fact *=i;
+//       }
+//       System.out.print("Factorial  of " + num +  " = " +  fact);
+     
+
+//    }
+// }
+
+
+//Multiplication table 
 import java.util.*;
 public class loop{
-    public static void main(String[] args){
-        int number;
-        int choice;
-        int evenSum = 0;
-        int oddSum = 0;
+    public static void main(String[] arg){
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter a number");
-
-        number = sc.nextInt();
-      for (int i = 0; i <= number;i++){
-        if(number%2==0){
-            evenSum+=i;
+        System.out.print("Enter any number of  table");
+        int num = sc.nextInt();
+        for (int i = 1; i<=10;i++){
+             System.out.println(num +  " * " + i + " = " + i * num);
         }
-        else{
-            oddSum +=i;
-        }
-      }
-      System.out.print("Do want to continue ? Press 1 for yes and 0 for not");
-      choice = sc.nextInt();
-      if(choice == 1 && number%2==0){
-          System.out.print("The sum of even num = " + evenSum);
-      }
-          if(choice == 1 && number%2!=0){
-            System.out.print("Heloo");
-            System.out.print("The sum of even num = " + oddSum);
-          }
-      
     }
-
 }
