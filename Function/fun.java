@@ -30,17 +30,129 @@ return:statement;
 // }
 
 //Sum function with return
-import java.util.*;
+// import java.util.*;
+// public class fun{
+//     public static int sum(int a , int b){
+//         int sum = a + b;
+//         System.out.print("Sum is =  " + sum);
+//         return sum;
+//     }
+//     public static void main(String[] args){
+//         // Scanner sc = new Scanner (System.in);
+//         // int a = sc.nextInt();
+//         // int b = sc.nextInt();
+//         sum(6,6);
+//     }
+// }
+
+//product of a and b
+// import java.util.*;
+// public class fun{
+//     public static void mul(int a,int b){
+//         int mul = a * b;
+//         System.out.print("Product of a and b =  " + mul);
+//     }
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter a num a ");
+//         int a = sc.nextInt();
+//         System.out.print("Enter a num b ");
+//         int b = sc.nextInt();
+//         mul(a,b);
+//     }
+
+// }
+//swap function
+
+
+// import java.util.*;
+// public class fun{
+//     public static void swap(int a,int b){
+//         int temp = a;
+//         a = b;
+//         b = temp;
+
+//         System.out.print(a);
+//         System.out.print(b);
+//     }
+//     public static void main(String[] args){
+//         swap(6,8);
+//     }
+// }
+
+//Factorial
+//bionommial coefficient
+/*
 public class fun{
-    public static int sum(int a , int b){
-        int sum = a + b;
-        System.out.print("Sum is =  " + sum);
-        return sum;
+    public static int  factorial(int n){
+        int f = 1;
+        for  (int i = 1; i <= n; i++){
+             f = (i*f);
+        }
+    
+        return f;
     }
-    public static void main(String[] args){
-        // Scanner sc = new Scanner (System.in);
-        // int a = sc.nextInt();
-        // int b = sc.nextInt();
-        sum(6,6);
+    public static int binCoeff(int n ,int r){
+        int fact_n = factorial(n);
+        int fact_r = factorial(r);
+        int nmr_fact = factorial(n-r);
+        int binCoef= fact_n/(fact_r * nmr_fact);
+        return binCoef;
+    }
+    
+    public static void main(String[] arg){
+      System.out.print(binCoeff(5,2));
     }
 }
+*/
+
+//Function overloading = same function name bt diffrent parameter in one class
+//its depend on only parameter
+//example
+//sum(int a ,int b);
+//sum(int a,int b,int c);
+//sum (bool a, bool b);
+/*
+import java.util.*;
+public class fun{
+    public static int sum(int a,int b){
+        int sum = a + b;
+        return sum;
+    }
+    public static int sum(int a, int b,int c){
+        int sum = a + b + c;
+        return sum;
+    }
+    public static int  sum(float  a,float b, float c){
+        int  sum = (int) (a + b + c);
+         return sum;
+    }
+    public static void main(String[] arg){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a  number a ");
+        float  a = sc.nextFloat();
+        System.out.print("Enter a number b ");
+        float b = sc.nextFloat();
+        System.out.print( "Sum of a and b  " + sum(a,b,5.5f));
+    }
+}
+*/
+
+public class fun{
+    public static boolean isPrime(int n){
+        boolean isPrime = true;
+        for(int i = 2; i <= n-1; i++){
+            if (n % i == 0){
+                isPrime = false;
+                break;
+            }
+        }
+        return isPrime;  
+    }
+    public static void main(String[] args){
+               System.out.print(isPrime(12));
+        }
+}
+
+
+
