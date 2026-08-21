@@ -138,21 +138,20 @@ public class fun{
 }
 */
 
-public class fun{
+  //check prime no 
+  //prime no - 1 and self 
+  public class fun{
     public static boolean isPrime(int n){
         boolean isPrime = true;
         for(int i = 2; i <= n-1; i++){
-            if (n % i == 0){
+            if(n % i == 0){
                 isPrime = false;
                 break;
             }
         }
-        return isPrime;  
+        return isPrime;
     }
-    public static void main(String[] args){
-               System.out.print(isPrime(12));
-        }
-}
-
-
-
+    public static void main(String[] arg){
+         System.out.print(isPrime(6));
+    }
+  }
