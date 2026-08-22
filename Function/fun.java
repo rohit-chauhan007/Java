@@ -140,6 +140,7 @@ public class fun{
 
   //check prime no 
   //prime no - 1 and self 
+  /*
   public class fun{
     public static boolean isPrime(int n){
         boolean isPrime = true;
@@ -155,3 +156,57 @@ public class fun{
          System.out.print(isPrime(6));
     }
   }
+  */
+
+  //optimize -every num gives repeated factor 
+   /*
+    public class fun{
+        public static boolean isPrime(int n){
+            boolean isPrime = true;
+            if(n == 2){
+                return true;
+            };
+            for(int i = 2; i <= Math.sqrt(n);i++){
+                if(n % i == 0){
+                    isPrime = false;
+                    break;
+                }
+            }
+            return isPrime;
+        }
+        //to check prime in range
+        public static void inRange(int n){
+            for(int i = 2; i <= n; i++){
+              if(isPrime(i)){
+                 System.out.println(i + "");
+              }
+            }
+            System.out.println("");
+           
+        }
+        public static void main(String[] arg){
+            inRange(9);
+        }
+    }
+    */
+   
+   //Binary to Decimal convertor
+   /*
+   public class fun {
+    public static void BinToDec(int binNum){
+        int realNum = binNum;
+       int power = 0;
+       int decVal = 0;
+       while(binNum >  0){
+         int lastD = binNum % 10;
+         decVal = decVal + (int)(lastD * Math.pow(2,power));
+         power++;
+         binNum = binNum / 10;
+       }
+       System.out.print("Binary num " + realNum +  "  = " + decVal + "");
+    }
+    public static void main(String[] args){
+       BinToDec(101);
+    }
+   }
+   */
