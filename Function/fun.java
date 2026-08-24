@@ -210,3 +210,23 @@ public class fun{
     }
    }
    */
+  //Decimal to binary - tb tk division kro jb tk remender 0 n aa jaye  uske baad remender ko ulta/backward likh do 
+  //5 = 2/5=remender 1,2/2 =rem.0,2/1 =rem-1;  decimal 101
+
+public class fun{
+    public static void DecToBin(int decNum){
+        int binaryVal = 0;
+        int power = 0;
+        while(decNum > 0){
+            int rem = decNum % 2;
+            binaryVal = binaryVal + (int)(rem * Math.pow(10,power));
+            decNum = decNum / 2;
+            power++;
+        }
+        System.out.print(binaryVal);
+    }
+
+    public static void main(String[] arg){
+        DecToBin(5);
+    }
+}
