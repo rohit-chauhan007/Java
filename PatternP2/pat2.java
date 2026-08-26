@@ -7,6 +7,7 @@
  ****
 
  */
+/*
 public class Pat2{
     public static void hollow_triangle(int totRows,int totCols){
         for (int i = 1; i <= totRows; i++){
@@ -25,3 +26,5 @@ public class Pat2{
       hollow_triangle(4,6);
     }
 }
+*/
+
