@@ -28,3 +28,9 @@ public class Pat2{
 }
 */
 
+//Inverted & rotated half pyramid
+/*
+    *
+   **
+  ***
+*****
