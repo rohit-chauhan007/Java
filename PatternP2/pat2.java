@@ -37,7 +37,7 @@ public class Pat2{
 logic
 space = n-1
 */
-
+/*
 public class Pat2{
     public static void inverted_hPyramid(int tRows){
         for (int i = 1; i <= tRows; i++){
@@ -53,5 +53,29 @@ public class Pat2{
     }
     public static void main(String[] args){
        inverted_hPyramid(10);
+    }
+}
+*/
+
+//inverted Pyramid with num
+/*
+1234 
+123
+12
+1
+*/
+
+public class Pat2{
+    public static void invPyramid_num(int rows){
+        
+        for (int i = 1; i <= rows; i++){
+          for (int j = 1; j <= rows-i+1; j++){
+            System.out.print(j);
+          }
+          System.out.println("");
+        }
+    }
+    public static void main(String[] args){
+         invPyramid_num(4);
     }
 }
