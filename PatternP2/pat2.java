@@ -114,7 +114,7 @@ public class Pat2{
  0 1 0 1
  1 0 1 0
  */
-
+/*
 public class Pat2{
     public static void zeroOne_triangle(int n){
         for(int i =  1; i <= n; i++){
@@ -131,5 +131,59 @@ public class Pat2{
     }
     public static void main(String[] arg){
                 zeroOne_triangle(5);
+    }
+}
+
+*/
+//Butterfly
+/*
+
+*            *
+* *        * * 
+* * *    * * *  
+* * * * * * * *
+* * * * * * * * 
+* * *     * * *
+* *         * *
+*             *
+*/
+public class Pat2{
+    public static void butterfly(int n){
+        for(int i = 1; i <= n; i++){
+            //star
+            for(int j = 1; j <= i; j++){
+                System.out.print("*");
+            }
+            //space
+            for(int j = 1; j <= 2*(n-i); j++ ){
+            System.out.print(" ");
+            }
+            //star 
+            for(int j = 1; j<=i; j++){
+                System.out.print("*");
+            }
+            System.out.println("");
+        }
+        //copy reverse 
+        //star
+       for(int i = n; i >= 1; i--){
+            //star
+            for(int j = i; j >= 1; j--){
+                System.out.print("*");
+            }
+            //space
+            for(int j = 1; j <= 2*(n-i); j++ ){
+            System.out.print(" ");
+            }
+            //star 
+            for(int j = i; j>=1; j--){
+                System.out.print("*");
+            }
+            System.out.println("");
+        }
+    }
+    public static void main(String[] arg){
+        butterfly(4);
+
     }
 }
