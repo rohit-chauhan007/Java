@@ -87,6 +87,7 @@ public class ar{
 */
 
 //Find the largest number in given array
+/*
 import java.util.*;
 public class ar{
     public static int largestNum(int number[]){//argument function -send value to the parameter
@@ -109,3 +110,4 @@ public class ar{
         System.out.print("Largest num is = " + largestNum(number));//parameter function
     }
 }
+*/
