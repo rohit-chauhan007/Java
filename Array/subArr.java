@@ -86,6 +86,7 @@ public class subArr{
 */
 
 //KEDANES ALGORITHEM
+/*
 import java.util.*;
 public class subArr{
     public static void kadanes(int number[]){
@@ -93,13 +94,10 @@ public class subArr{
         int cs = 0;
         for(int i = 0; i< number.length; i++){
              cs = cs + number[i];
-
              ms = Math.max(cs,ms);
-           
             if(cs<0){
                 cs = 0;
             }
-           
         }
         System.out.print("Max sum = " + ms);
     }
@@ -108,3 +106,4 @@ public class subArr{
         kadanes(number);
     }
 }
+*/
