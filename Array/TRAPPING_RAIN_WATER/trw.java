@@ -2,6 +2,8 @@
 //condition
 //(1)bars height can not be in acceding or deccending order
 //(2)Bars should be min 3 for trap rain water
+//1 st leftMax 
+//2 right Max
 
 import java.util.*;
 public class trw{
