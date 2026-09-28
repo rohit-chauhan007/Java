@@ -4,7 +4,7 @@
 //(2)Bars should be min 3 for trap rain water
 //1 st leftMax 
 //2 right Max
-
+/*
 import java.util.*;
 public class trw{
   public static int trapRainWater(int height[]){
@@ -34,4 +34,35 @@ public class trw{
      int trapWater =  trapRainWater(height);
     System.out.print(trapWater);
       }
+}
+*/
+import java.util.*;
+public class trw{
+  public static int trapRainWater(int height[]){
+    int n = height.length;
+    int l = 0;
+    int r = n-1;
+    int lMax = 0;
+    int rMax = 0;
+    int ans = 0;
+    while(l<r){
+        lMax = Math.max(lMax,height[l]);
+        rMax = Math.max(rMax,height[r]);
+
+        if(lMax<rMax){
+          ans += lMax - height[l];
+          l++;
+       }else{
+        ans += rMax - height[r];
+        r--;
+       }
+       
+    }
+    return ans;
+  }
+  public static void main(String[] arg){
+    int[] height = {4,2,0,10};
+    int trap = trapRainWater(height);
+    System.out.print(trap);
+  }
 }
