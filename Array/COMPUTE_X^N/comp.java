@@ -2,6 +2,7 @@
 // x is any digit num..
 // n should be any digit 
 //2 power 8 = 243;
+/*
 import java.util.*;
 public class comp{
     public static void main(String[] arg){
@@ -11,3 +12,5 @@ public class comp{
         System.out.print(ans);
     }
 }
+*/
+//binary exponential
