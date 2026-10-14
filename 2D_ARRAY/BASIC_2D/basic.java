@@ -37,3 +37,23 @@ public class basic {
     }
 }
 */
+
+public class basic {
+    public static boolean Search(int matrix[][],int key){
+        for(int i = 0; i < matrix.length; i++){
+            for(int j = 0; j < matrix[0].length; j++){
+                if(matrix[i][j] == key){
+                    System.out.print(i + "th row " + j + "th col ");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+    public static void main(String[] arg){
+        int matrix[][] = {{1,2,3},{4,5,6}};
+        int key = 6;
+      boolean result =   Search(matrix,key);
+        System.out.print(result);
+    }
+}
