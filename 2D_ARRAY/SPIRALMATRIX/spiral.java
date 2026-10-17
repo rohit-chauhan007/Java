@@ -26,8 +26,13 @@ public class spiral{
        for (int i = endRow-1; i > startRow; i--){
         System.out.print(matrix[i][startRow] + " ");
        }
-       
+         startRow++;
+         startCol++;
+         endRow--;
+         endCol--;
+         
         }
+         
     }
     public static void main(String[] arg){
        int matrix[][] = {{1,2,3,4},{5,6,7,8},{9,10,11,12},{13,14,15,16}};
