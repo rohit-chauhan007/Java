@@ -20,7 +20,7 @@ public class selection {
     }
     public static void main(String[] arg){
         int[] arr = {5,2,3,1,4};
-        
+    
         selection_sort(arr);
 
     }

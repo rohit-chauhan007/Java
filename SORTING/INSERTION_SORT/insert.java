@@ -10,7 +10,7 @@ public class  insert{
             int prev = i - 1; //1 - 1 = 0;
            //while loop
            while(prev >= 0 && arr[prev] > curr){ //true && arr[0] = 3 > 2 true = true
-               arr[prev + 1] = arr[prev];//arr[1] = [2]; 
+               arr[prev + 1] = arr[prev];//arr[1] = 2; 
                prev--;
            }
              arr[prev + 1] = curr; 
