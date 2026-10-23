@@ -14,6 +14,7 @@ public class string{
         System.out.println(name.charAt(2));//h
         System.out.println(name.equals("Rohit"));//true
         System.out.println(name.concat(" Kumar "));//Rohit Kumar
-        System.out.println(name.toUpperCase());
+        System.out.println(name.toUpperCase());//ROHIT
+        System.out.println(name.toLowerCase());//rohit
     }
 }
