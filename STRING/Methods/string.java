@@ -3,6 +3,8 @@
 2 charAt(index) - find charector by the index 
 3.concat("kumar") - add two string in given string
 4.equals() = use to compare two string content
+5.toUpperCase() = convert string into upperCase;
+6.toLowerCase() = convert string into lowerCase;
 */
 
 public class string{
@@ -12,6 +14,6 @@ public class string{
         System.out.println(name.charAt(2));//h
         System.out.println(name.equals("Rohit"));//true
         System.out.println(name.concat(" Kumar "));//Rohit Kumar
-
+        System.out.println(name.toUpperCase());
     }
 }
