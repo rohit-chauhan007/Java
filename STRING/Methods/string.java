@@ -5,6 +5,8 @@
 4.equals() = use to compare two string content
 5.toUpperCase() = convert string into upperCase;
 6.toLowerCase() = convert string into lowerCase;
+7.subString(startingIndex,endIndex) = ek chhota sa part cut krta hai
+
 */
 
 public class string{
@@ -16,5 +18,6 @@ public class string{
         System.out.println(name.concat(" Kumar "));//Rohit Kumar
         System.out.println(name.toUpperCase());//ROHIT
         System.out.println(name.toLowerCase());//rohit
+        System.out.println(name.substring(1,5));//ohit
     }
 }
